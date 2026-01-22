@@ -1,0 +1,19 @@
+schema_version = "1.0.0"
+
+# Required
+id = "blender_tetris"
+version = "0.4.6"
+name = "Blender Tetris"
+tagline = "Play Tetris in Blender using Geometry Nodes"
+maintainer = "Darkstarrd"
+type = "add-on"
+blender_version_min = "4.2.0"
+
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
+
+tags = ["Game", "3D View"]
+
+[permissions]
+# No special permissions needed for now
