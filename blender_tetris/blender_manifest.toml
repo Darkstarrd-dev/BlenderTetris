@@ -13,7 +13,5 @@ license = [
   "SPDX:GPL-3.0-or-later",
 ]
 
-tags = ["Game", "3D View"]
-
-[permissions]
-# No special permissions needed for now
+# Standard Blender tags
+tags = ["3D View", "Animation"]
