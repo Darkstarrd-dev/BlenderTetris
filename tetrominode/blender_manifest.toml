@@ -1,7 +1,7 @@
 schema_version = "1.0.0"
 
 # Required
-id = "tetrominode"
+id = "tetromino"
 version = "0.4.6"
 name = "Tetrominode"
 tagline = "Play Tetris in Blender using Geometry Nodes"

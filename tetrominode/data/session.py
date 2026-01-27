@@ -30,7 +30,7 @@ DEFAULT_DROP_INTERVAL = 0.6
 TIMER_STEP_SECONDS = 0.05
 
 # Replay JSON（导出/导入）格式版本。
-REPLAY_JSON_SCHEMA = "tetrominode.replay"
+REPLAY_JSON_SCHEMA = "tetromino.replay"
 REPLAY_JSON_VERSION = 2
 
 
@@ -400,7 +400,7 @@ def recording_to_replay_json(
 
     JSON 结构（v2 - 差分压缩）：
     {
-        "schema": "tetrominode.replay",
+        "schema": "tetromino.replay",
         "version": 2,
         "meta": {...},
         "steps": [
@@ -601,7 +601,10 @@ def parse_replay_json(payload: Any) -> tuple[list[RecordedState], dict[str, Any]
 
     doc: Any = payload
     if isinstance(payload, dict):
-        if "tetrominode_replay" in payload:
+        if "tetromino_replay" in payload:
+            doc = payload.get("tetromino_replay")
+        elif "tetrominode_replay" in payload:
+            # backward compatible key (temporary)
             doc = payload.get("tetrominode_replay")
         elif "blender_tetris_replay" in payload:
             # backward compatible key
