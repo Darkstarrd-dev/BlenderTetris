@@ -1,0 +1,17 @@
+schema_version = "1.0.0"
+
+# Required
+id = "tetrominode"
+version = "0.4.6"
+name = "Tetrominode"
+tagline = "Play Tetris in Blender using Geometry Nodes"
+maintainer = "Darkstarrd"
+type = "add-on"
+blender_version_min = "4.2.0"
+
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
+
+# Standard Blender tags
+tags = ["3D View", "Animation"]

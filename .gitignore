@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Blender
+*.blend1
+*.blend2
+*.blend@
+*.blend~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Local scripts
+tools/
+
+# Local packaging artifacts
+*.zip
+
+# Local working copies (not part of repo)
+tetromino/
+tetrominodo/
